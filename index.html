@@ -20,6 +20,20 @@
 		(i.e. targets not mentioned in the prometheus server configuration file) using the Prometheus Pushgateway server in 
 		push mode. All the components in the repository are installed in Docker containers.
 	</p>
+	<h1> Cytoscape Tree Editor</h1>
+	You can find the repository at the following url <a href="https://github.com/aleusai/cytoscape-tree-editor">https://github.com/aleusai/cytoscape-tree-editor</a>
+	<h2>Use case/Motivation</h2>
+	<p>
+		The Editor allows the creation of a Cytoscape Tree with different node types, each node having a different data payload. 
+		A Tree can be created, uploaded, saved, as well as edited (e.g. cloning/deleting nodes, or editing the data payload themselves). 
+		Many actions are done with specific key bindings while the data editing is done with Ace editors in-browser. There is also a pipeline 
+		editor that allows the creation of multiple branches by simply specifyng the node type. Each Tree is thought of as a root node, with is 
+		connected to meta nodes (one per node type): these latter ones in turn are conneccted to 1...n nodes of that specific type. 
+		A use case for this type of visualization is the representation of a two level json configuration file.
+		As Cytoscape is used in headless mode, thousands of nodes can be handled at the same time (depending on the hardware, possibly tens 
+		of thousands).
+		
+	</p>	
 </body>
 
 </html>
